@@ -1,0 +1,374 @@
+/* (c) Copyright 2008 SailPoint Technologies, Inc., All Rights Reserved. */
+
+/* IIQ Custom
+This is used for any custom styles or style overrides used to rebrand IIQ
+user pages.  The most common styles affecting the overall page look and feel
+are listed below.
+*/
+
+/* =====================================================================
+   PART 1 - Generated blue -> burgundy overrides
+   Built from this install's IIQ 8.5 stylesheets (css/*.css and css/sailpoint/**). Every rule there
+   that sets a blue (and is not already overridden later by SailPoint) is
+   repeated here with the same selector and burgundy:
+     dark/medium blue                          -> #800020 (dark burgundy)
+     light blue, and hover/focus/active states -> #a8324f (light burgundy)
+     pale blue tint                            -> #f5e1e6 (pale burgundy)
+   Same selector + loaded later = wins, without !important, so white text
+   on buttons stays white. !important is kept only where SailPoint used it.
+   Re-generate after a patch if SailPoint changes its stylesheets.
+   ===================================================================== 
+
+Dark burgundy: #800020
+Light burgundy: #a8324f   
+   
+   */
+
+/* --- from css/ext4-overrides.css --- */
+.x-tab-active button {
+  color: #800020 !important;
+}
+.x-grid-row-selected {
+  border: 1px dotted #f5e1e6;
+}
+
+/* --- from css/messages/messages.css --- */
+.info {
+  color: #800020;
+  background-color: #f5e1e6;
+}
+.info a {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/base.css --- */
+#bodyDivTitle,
+#bodyDivTitle h1 {
+  color: #800020;
+}
+.bodyDivFooter {
+  background: #800020;
+}
+.sectionHeader {
+  color: #800020;
+}
+.subSectionHeader {
+  color: #800020;
+}
+.spBlue,
+.spSolidBlue {
+  background: #800020;
+}
+.spBlueTable th {
+  background: #800020;
+}
+.spContentTitle,
+.spContentTitle2 {
+  color: #800020;
+}
+.progressText {
+  color: #800020;
+}
+.fakeLink,
+.unboldFakeLink,
+.smallFakeLink {
+  color: #800020;
+}
+.fakeLink:hover,
+.unboldFakeLink:hover,
+.smallFakeLink:hover {
+  color: #a8324f;
+}
+.alphacube_title {
+  color: #800020;
+}
+select[disabled="disabled"][multiple="multiple"] option[selected="selected"] {
+  background-color: #800020;
+}
+
+/* --- from css/sailpoint/buttons.css --- */
+.primaryBtn {
+  border: solid 1px #800020 !important;
+  background-color: #800020 !important;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #800020), color-stop(100%, #800020)) !important;
+  background-image: -webkit-linear-gradient(top, #800020, #800020) !important;
+  background-image: -moz-linear-gradient(top, #800020, #800020) !important;
+  background-image: -o-linear-gradient(top, #800020, #800020) !important;
+  background-image: -ms-linear-gradient(top,#800020, #800020) !important;
+  background-image: linear-gradient(top, #800020, #800020) !important;
+}
+.primaryBtn:hover,
+.primaryBtn:focus {
+  background-color: #a8324f !important;
+  border: solid 1px #a8324f !important;
+}
+.primaryBtn:active {
+  background-color: #a8324f !important;
+  border: solid 1px #a8324f !important;
+}
+.secondaryBtn,
+.ruleEditorBtn,
+input[onclick*="_popUpCalendarForInputDate"][type="button"] {
+  color: #800020;
+}
+.secondaryBtn .x-btn-inner {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/component/cert-statusor.css --- */
+.statusor.saving {
+  border: 1px solid #800020;
+  color: #800020;
+}
+
+/* --- from css/sailpoint/component/wizard.css --- */
+.wizardStep:hover {
+  color: #a8324f;
+}
+
+/* --- from css/sailpoint/form/form-editor.css --- */
+.x-tree-ddindicator {
+  border-color: #800020;
+}
+.fieldMenu .x-menu-item-active .x-menu-item-link {
+  background-color: #800020 !important;
+  border: 1px solid #800020 !important;
+}
+
+/* --- from css/sailpoint/menu.css --- */
+.x-menu-item-active .x-menu-item-link {
+  border: solid 1px #800020;
+}
+#menuItems li a:hover {
+  color: #a8324f !important;
+}
+#menuItems li.menuitemselected a {
+  color: #800020 !important;
+}
+.main-submenu .x-menu-item-active {
+  background-color: #800020 !important;
+}
+.main-submenu .x-menu-item-active a {
+  background-color: #800020 !important;
+}
+.sMTextHover {
+  color: #800020;
+}
+.header-divider {
+  border-bottom-color: #800020;
+}
+
+/* --- from css/sailpoint/web/analyze/search.css --- */
+.savedSearch,
+.loadedSavedSearch {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/web/dashboard.css --- */
+.dashChoicesHeader {
+  background: #800020 url("../../../images/gradients/lightTeal.png") repeat-x;
+}
+
+/* --- from css/sailpoint/web/define/applications/applications.css --- */
+#jdbcSettingsDiv .x-panel-header-text,
+#delimitedSettingsDiv .x-panel-header-text,
+#sqlLoaderDiv .x-panel-header-text,
+.blueHeader .x-panel-header-text {
+  color: #800020;
+}
+.appPageExtTabs .x-tab-active {
+  background-color: #800020 !important;
+}
+
+/* --- from css/sailpoint/web/define/identity/identity.css --- */
+.x-btn.x-btn-identityEntitlementTogglePressed {
+  background-color: #800020;
+}
+.x-btn.x-btn-identityEntitlementTogglePressed .x-btn-center .x-btn-inner {
+  background-color: #800020;
+}
+.classification-icon .fa-folder {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/web/define/roles/roles.css --- */
+.modelerMetricsTableContent {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/web/lcm/request-access.css --- */
+#requestAccessFilters h4 span {
+  color: #800020;
+}
+#requestAccessSearchToggle a {
+  color: #800020;
+}
+#pageControls h4.request-options {
+  color: #800020;
+}
+p.role-acct-select-hdr {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/web/login.css --- */
+#logobar {
+  background: #800020 url(../../../images/TopLogo1.png);
+}
+.loginHeader {
+  color: #800020;
+}
+.forgotPasswordLink a strong {
+  color: #800020;
+}
+.version {
+  color: #800020;
+}
+
+/* --- from css/sailpoint/web/systemSetup/system-setup.css --- */
+#qlpEditorDiv .selectableGrid .x-grid-row-selected .x-grid-cell {
+  background-color: #800020 !important;
+}
+#qlpEditorDiv .spTable caption,
+#qlpEditorDiv h3 {
+  color: #800020;
+}
+#qlpOptionsPopup .x-window-header {
+  background-color: #800020 !important;
+}
+
+/* =====================================================================
+   PART 2 - SailPoint template + hand-tuned rules (these win over Part 1)
+   ===================================================================== */
+
+/*
+ * background and header
+ */
+body,
+body.x-border-layout-ct {
+}
+
+.borderCell {
+}
+
+#headerText #headerForm a {
+}
+
+/*
+ * main body of pages
+ */
+a, a:visited, a:active {
+  color: #800020;
+}
+
+/* Page titles: Identity Warehouse, Tasks, etc. */
+#bodyDivTitle h1, .bodyDivTitle h1 {
+  color: #800020 !important;
+}
+
+/* Footer */
+.bodyDivFooter {
+  background-color: #800020 !important;
+  background-image: none !important;
+  border-color: #800020 !important;
+  color: #fff !important;
+}
+
+/* Active tab text */
+div.appPageExtTabs .x-tab-active,
+div.appPageExtTabs .x-tab-active * {
+  color: #800020 !important;
+}
+
+.bodyDiv, #bodyTitleTd, #bodyContentTd, #bodyBottomTd {
+}
+
+/*
+ * login page
+ */
+div#logobar {
+}
+
+.loginHeader {
+}
+
+/*
+ * main menu bar - use !important to color, background-color
+ */
+.menu #menuItems li.menuitemselected a {
+}
+
+.menu #menuItems li a:hover {
+}
+
+.main-submenu .x-menu-item-active a {
+}
+
+/*
+ * buttons - use !important to override border, background-color, background-image
+ */
+
+/* Primary buttons: Add New Application, Run Search, New Task */
+.x-btn-default-small, div.primaryBtn, input.primaryBtn {
+  background-color: #800020 !important;
+  background-image: none !important;
+  border-color: #800020 !important;
+  color: #fff !important;
+}
+
+.x-btn-default-small:hover, div.primaryBtn:hover, input.primaryBtn:hover {
+  background-color: #a8324f !important;
+  background-image: none !important;
+  border-color: #a8324f !important;
+}
+
+/* Secondary buttons: Advanced Search, Clear Search (text) */
+div.secondaryBtn, input.secondaryBtn, button.secondaryBtn {
+  color: #800020 !important;
+}
+
+div.secondaryBtn:hover, input.secondaryBtn:hover, button.secondaryBtn:hover {
+  color: #a8324f !important;
+}
+
+/** default toolbar button style overrides **/
+.x-btn-default-toolbar-small-noicon,
+.x-btn-default-toolbar-medium-noicon {
+}
+
+/** default toolbar button style hover override - use !important to override border, background-color, background-image **/
+.x-btn-default-toolbar-small-noicon.x-btn-default-toolbar-small-over,
+.x-btn-default-toolbar-medium-noicon.x-btn-default-toolbar-medium-over {
+}
+
+/* ===== Classic pages: blue text → dark burgundy ===== */
+
+/* Page title container (the h1 rule already covers the text itself) */
+#bodyDivTitle {
+  color: #800020 !important;
+  border-color: #800020 !important;
+}
+
+/* Section titles: Search Type, Search Criteria, Fields to Display */
+.spContentTitle {
+  color: #800020 !important;
+}
+
+/* Section headers: Standard Attributes, Entitlement meta-data, Other */
+.sectionHeader,
+.subSectionHeader {
+  color: #800020 !important;
+}
+
+/* ExtJS button labels: Advanced Search, Clear Search, Included Account Types */
+.x-btn-inner {
+  color: #800020 !important;
+}
+.x-btn:hover .x-btn-inner {
+  color: #a8324f !important;
+}
+
+/* ...except primary buttons (Run Search, New Task), which keep white text */
+.x-btn-default-small .x-btn-inner,
+.primaryBtn .x-btn-inner {
+  color: #fff !important;
+}
